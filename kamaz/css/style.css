@@ -24,6 +24,19 @@ body{
     display: inline-block;
 }
 
+.phone{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin-top: 17px;
+}
+
+.img1{
+    width: 26px;
+    height: 20px;
+    align-self: flex-end;
+    
+}
+
 .navbar .logo{
     margin-top: 59px;
     margin-left: 130px;
@@ -97,7 +110,6 @@ nav ul ul li {
 
 .column{
     columns: 4;
-    
     position:sticky;
 }
 

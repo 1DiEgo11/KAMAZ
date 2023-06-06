@@ -5,18 +5,40 @@
     <meta name="description" content="Контакты фирмы, телефоны, адреса, электронная почта">
     <meta name="keywords" content="контакты, телефон, адрес, электронная почта, фирма">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b52bef8d-bcaa-4d0e-b566-2e84d8b69c37&lang=ru_RU" type="text/javascript"></script>
   </head>
 
-<body>
+  <body>
     <div class="filter-b no-margin wider">
-      <form name="arOfficesFilter_form" action="/contacts/" method="get" class="smartfilter">
-        <input type="text" name="city" placeholder="Введите город">
-        <select name="region">
-          <option value="region1">Регион 1</option>
-          <option value="region2">Регион 2</option>
-          <option value="region3">Регион 3</option>
-        </select>
-        <input type="submit" value="Найти офисы">
-      </form>
+    <p>Контакты</p>   
+    <style>
+        p {
+            font-size: 30px;
+        }
+    </style> 
+
+        <form>
+          <select name="region">
+            <option value="region">Все города</option>
+            <option value="region1">Москва</option>
+            <option value="region2">Казань</option>
+            <option value="region3">Набережные Челны</option>
+          </select>
+          <input type="submit" value="Найти офисы">
+        </form>
     </div>
-  </body>
+    
+<div id="map" style="width: 600px; height: 400px;"></div>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init() {
+            var myMap = new ymaps.Map("map", {
+                center: [55.76, 37.64],
+                zoom: 10
+            });
+        }
+    </script>
+</body>
+
+  

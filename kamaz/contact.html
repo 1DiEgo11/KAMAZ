@@ -1,0 +1,44 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Контакты </title>
+    <meta name="description" content="Контакты фирмы, телефоны, адреса, электронная почта">
+    <meta name="keywords" content="контакты, телефон, адрес, электронная почта, фирма">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=b52bef8d-bcaa-4d0e-b566-2e84d8b69c37&lang=ru_RU" type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div class="filter-b no-margin wider">
+    <p>Контакты</p>   
+    <style>
+        p {
+            font-size: 30px;
+        }
+    </style> 
+
+        <form>
+          <select name="region">
+            <option value="region">Все города</option>
+            <option value="region1">Москва</option>
+            <option value="region2">Казань</option>
+            <option value="region3">Набережные Челны</option>
+          </select>
+          <input type="submit" value="Найти офисы">
+        </form>
+    </div>
+    
+<div id="map" style="width: 600px; height: 400px;"></div>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init() {
+            var myMap = new ymaps.Map("map", {
+                center: [55.76, 37.64],
+                zoom: 10
+            });
+        }
+    </script>
+</body>
+
+  

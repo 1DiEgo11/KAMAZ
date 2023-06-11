@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+}
+
+html,
+body {
+    font-size: 18px;
+}
+
+.center {
+    max-width: 1200px;
+    margin: 50px auto;
+    background: #f1f1f1;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+button {
+    background: none;
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    font-size: .9rem;
+    margin: 10px;
+    max-height: 30px;
+}
+
+button:hover {
+    box-shadow: 0px 0px 10px black;
+}
+
+button:active {
+    background: #000;
+}
+
+.slider-btn {
+    max-width: 30px;
+    max-height: 30px;
+}
+
+.slider {
+    max-width: 80%;
+    border: 2px solid black;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider-line {
+    display: flex;
+    transition: all ease 1s;
+}
+
+.sl {
+    display: flex;
+    align-items: center;
+}

@@ -20,21 +20,50 @@ body{
     display: flex;
 }
 
-.navbar-menu{
-    display: inline-block;
+.call-center{
+    margin-top: 10px;
+    font-size: 14px;
+    display:block;
+    color: #637488;
+    text-decoration:none;
 }
 
 .phone{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    margin-top: 17px;
+    margin-top: 10px;
+    font-weight: bold;
+    display:block;
+    color: #637488;
+    text-decoration:none;
+}
+.icons{
+    float:right;
+    position: relative;
+    margin-top: 10px;
+    
 }
 
-.img1{
-    width: 26px;
-    height: 20px;
-    align-self: flex-end;
-    
+.topnav{
+    width: 300px;
+    float: right;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.topnav a{
+    width: 300px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav input[type=text]{
+    width: 300px;
+    border: none;
+    padding: 6px;
+    font-size: 16px;
 }
 
 .navbar .logo{
@@ -83,18 +112,18 @@ nav a:hover {
 nav ul ul {
     z-index: 9999999;
     background-color: white;
-    text-align:start;
+    text-align:left;
     display: none;
     position: absolute;
     top: 100%;
-    left: -0.1px;
+    /*left: -0.1px;*/
 
 }
 
 /* отображаем выпадающий список при наведении */
 nav ul li:hover > ul {
     display:inherit;
-    align-self:flex-start;
+    /*align-self:flex-start;*/
     width: 100%;
     left: 0;
 }
@@ -111,6 +140,7 @@ nav ul ul li {
 .column{
     columns: 4;
     position:sticky;
+    
 }
 
 .column a{

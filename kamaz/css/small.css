@@ -1,0 +1,21 @@
+body, html, header
+{
+	font-size: 10px !important;
+}
+
+.nav__item
+{
+	padding: 7px 12px !important;
+	margin: 1px !important;
+}
+
+.main__content
+{
+	width: 80% !important;
+	margin: 0 auto !important;
+}
+
+.ui-button
+{
+	padding: 5px 12px !important;
+}

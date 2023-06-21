@@ -4,7 +4,7 @@ body{
     font-size: 14px;
     line-height: 1.4;
     color: #000;
-    min-width: 320px;
+    min-width: 420px;
     overflow-x: hidden;
     height: auto;
 }
@@ -149,11 +149,14 @@ nav ul ul li {
 }
 
 .column{
-    columns: 4;
+    columns: 3;
     position:sticky;
-    
 }
 
-.column a{
-    font-size: 14px;
+li{
+    list-style-type: none
+}
+
+a:visited{
+    color:#637488;
 }

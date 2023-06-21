@@ -132,3 +132,7 @@ menu{
     text-align: center;
     
 }
+
+.footer-bottom-block li{
+    list-style-type: none
+}

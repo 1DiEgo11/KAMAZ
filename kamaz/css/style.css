@@ -153,9 +153,10 @@ nav ul ul li {
     position:sticky;
 }
 
-li{
+.column li{
     list-style-type: none
 }
+
 
 a:visited{
     color:#637488;

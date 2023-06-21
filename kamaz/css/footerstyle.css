@@ -79,8 +79,12 @@ menu{
 }
 .mama{
     font-weight: bold;
+    color: #637488;
 }
-
+.mama a:hover {
+    color: rgb(255, 166, 0);
+        transition: 0.2s;
+}
 .vismut{
     margin-top: 30px;
     color: #637488;

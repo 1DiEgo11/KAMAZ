@@ -1,44 +1,137 @@
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
     <title>Контакты </title>
-    <meta name="description" content="Контакты фирмы, телефоны, адреса, электронная почта">
-    <meta name="keywords" content="контакты, телефон, адрес, электронная почта, фирма">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=b52bef8d-bcaa-4d0e-b566-2e84d8b69c37&lang=ru_RU" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/footerstyle.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    
   </head>
 
-  <body>
-    <div class="filter-b no-margin wider">
-    <p>Контакты</p>   
-    <style>
-        p {
-            font-size: 30px;
-        }
-    </style> 
+  <header>
+    <nav class="navbar">
 
-        <form>
-          <select name="region">
-            <option value="region">Все города</option>
-            <option value="region1">Москва</option>
-            <option value="region2">Казань</option>
-            <option value="region3">Набережные Челны</option>
-          </select>
-          <input type="submit" value="Найти офисы">
-        </form>
-    </div>
+        
+        <div class="container">
+            <a href="index.html" class="logo"><img src="https://kamaz.ru/bitrix/templates/main/images/logo.png" alt="KAMAZ"
+                    title="KAMAZ"></a>
+            <per class="navbar_menu">
+                <aq class="call-center">Call-центр с 6:00 - 22:00 МСК</aq>
+                <aw class="phone">8 (800) 555-00-99</aw>
+            </per>
+        </div>
+
+    </nav>
+    <nav>
+            <ul>
+			    <li><a >О КОМПАНИИ</a>
+                    <ul class="column">
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="services.html">Наши услуги </a></li>
+                        <li><a href="product.html">Наши работы</a></li>
+                        <li><a href="team.html">Наша команда</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                    <!--<ul class="column"> 
+                        <li1> <a href="#">Sub Six</a> </li1> 
+                        <li1> <a href="#">Sub Seven</a> </li1> 
+                        <li1> <a href="#">Sub Eight</a> </li1> 
+                        <li1> <a href="#">Sub Nine</a> </li1> 
+                        <li1> <a href="#">Sub Ten</a> </li1> 
+                    </ul> -->
+                </li>
+            </ul>        
+    </nav>
+</header>
+
+  <body>
+    <div class="center ">
+      <div class="filter-b no-margin wider">
+        <p>Контакты</p>   
+        <style>
+          p {
+              font-size: 30px;
+          }
+        </style> 
+
+        
+      </div>
     
-<div id="map" style="width: 600px; height: 400px;"></div>
-    <script type="text/javascript">
-        ymaps.ready(init);
-        function init() {
-            var myMap = new ymaps.Map("map", {
-                center: [55.76, 37.64],
-                zoom: 10
-            });
-        }
-    </script>
+      <div class="map">
+        
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A377df2f6e3c85ccfb783883cf0ad335b79dac02e45186a0c3c9f346320b0e610&amp;width=100%&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-top-block">
+          <div class="center-block">
+              <div class="name">О КОМПАНИИ</div>
+              <menu class="left-menu">
+                  <li>
+                      
+                      <menu>
+                          <ul class="column">
+                              <li><a href="about.html">О нас</a></li>
+                              <li><a href="services.html">Наши услуги </a></li>
+                              <li><a href="product.html">Наши работы</a></li>
+                              <li><a href="team.html">Наша команда</a></li>
+                              <li><a href="contact.html">Контакты</a></li>
+                          </ul>
+              </menu>
+              
+          </menu>
+              </li>
+              
+              <menu class="right-menu">
+                  <li>
+                      <menu>
+                  <li><div class="boba" >423827 РФ, РЕСПУБЛИКА ТАТАРСТАН, Г. 
+                      <br />НАБЕРЕЖНЫЕ ЧЕЛНЫ, ПРОСПЕКТ
+                      <br />АВТОЗАВОДСКИЙ, 2
+                  </div>
+                  </li>
+              </menu>
+              </li>
+              <li>
+                  <menu>
+              <li><div class="vismut">CALL-ЦЕНТР С 6:00 - 22:00 МСК </div></li>
+              <li>
+                  <ga class="edal">8 (800) 555-00-99</ga>
+              </li>
+              <li><a href="mailto:callcentre@kamaz.org" class="mama">CALLCENTRE@KAMAZ.ORG</a></li>
+              </menu>
+              </li>
+          </div>
+          <div class="footer-bottom-block">
+              <div class="center-block">
+                  <menu class="liscense">
+                      <li>
+                          <menu>
+                      <li><div class="bum">© ПАО “КАМАЗ” 1999-2023</li>
+                      <li>ВСЕ ПРАВА НА МАТЕРИАЛЫ ОПУБЛИКОВАННЫЕ НА САЙТЕ, ЗАЩИЩЕНЫ В СООТВЕТСТВИИ С РОССИЙСКИМ И
+                              МЕЖДУНАРОДНЫМ</li>
+                      <li>ЗАКОНОДАТЕЛЬСТВОМ ОБ АВТОРСКОМ ПРАВЕ И СМЕЖНЫХ ПРАВАХ</div></li>
+                  </menu>
+                  </li>
+                  <li>
+                      <menu>
+                  <li><a class="bum">РАРЗРАБОТКА САЙТА</a></li>
+                  <li><a>--------- </a></li>
+                  </menu>
+                  </li>
+                  </menu>
+              </div>
+          </div>
+      </div>
+      
+  </footer>
+
+  
 </body>
 
   

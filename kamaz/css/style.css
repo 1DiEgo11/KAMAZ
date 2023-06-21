@@ -4,7 +4,7 @@ body{
     font-size: 14px;
     line-height: 1.4;
     color: #000;
-    min-width: 420px;
+    min-width: 320px;
     overflow-x: hidden;
     height: auto;
 }
@@ -160,4 +160,8 @@ nav ul ul li {
 
 a:visited{
     color:#637488;
+}
+
+map{
+    width: 800px;
 }
